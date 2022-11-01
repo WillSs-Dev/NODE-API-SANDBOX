@@ -8,12 +8,25 @@ chai.use(chaiHttp);
 const { expect } = chai;
 
 describe('Testing if the API works properly', function () {
-  it('Using method GET on the root route', async function () {
+  it('Using GET method on the root route', async function () {
     const users = await getUsers();
-    
+
     const response = await chai.request(app).get('/');
 
     expect(response.status).to.be.equal(200);
     expect(response.body).to.deep.equal(users);
+  });
+  it('Using GET method to find a person by an id', async function () {
+    const neron = {
+      id: 10,
+      firstName: 'Neron',
+      lastName: 'Izakovitz',
+      gender: 'Male',
+    };
+
+    const response = await chai.request(app).get('/users/10');
+
+    expect(response.status).to.be.equal(200);
+    expect(response.body).to.deep.equal(neron);
   });
 });
