@@ -1,94 +1,92 @@
-{
-  "users": [
-    {
-      "id": 1,
-      "first_name": "Edi",
-      "last_name": "Sweetlove",
-      "gender": "Female"
-    },
-    {
-      "id": 2,
-      "first_name": "Vincents",
-      "last_name": "Ducker",
-      "gender": "Male"
-    },
-    {
-      "id": 3,
-      "first_name": "Sloan",
-      "last_name": "Brickstock",
-      "gender": "Male"
-    },
-    {
-      "id": 4,
-      "first_name": "Trevar",
-      "last_name": "Mantha",
-      "gender": "Male"
-    },
-    {
-      "id": 5,
-      "first_name": "Bonni",
-      "last_name": "Borwick",
-      "gender": "Female"
-    },
-    {
-      "id": 6,
-      "first_name": "Lara",
-      "last_name": "Stollsteimer",
-      "gender": "Female"
-    },
-    {
-      "id": 7,
-      "first_name": "Eldredge",
-      "last_name": "Olesen",
-      "gender": "Male"
-    },
-    {
-      "id": 8,
-      "first_name": "Dennison",
-      "last_name": "Eastabrook",
-      "gender": "Male"
-    },
-    {
-      "id": 9,
-      "first_name": "Justis",
-      "last_name": "Mylechreest",
-      "gender": "Male"
-    },
-    {
-      "id": 10,
-      "first_name": "Neron",
-      "last_name": "Izakovitz",
-      "gender": "Male"
-    },
-    {
-      "id": 11,
-      "first_name": "Ram",
-      "last_name": "Tuttiett",
-      "gender": "Male"
-    },
-    {
-      "id": 12,
-      "first_name": "Chester",
-      "last_name": "McFee",
-      "gender": "Male"
-    },
-    {
-      "id": 13,
-      "first_name": "Janean",
-      "last_name": "Izkovitz",
-      "gender": "Female"
-    },
-    {
-      "id": 14,
-      "first_name": "Felicia",
-      "last_name": "Jacquemy",
-      "gender": "Female"
-    },
-    {
-      "id": 15,
-      "first_name": "Netta",
-      "last_name": "Sperling",
-      "gender": "Female"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "first_name": "Edi",
+    "last_name": "Sweetlove",
+    "gender": "Female"
+  },
+  {
+    "id": 2,
+    "first_name": "Vincents",
+    "last_name": "Ducker",
+    "gender": "Male"
+  },
+  {
+    "id": 3,
+    "first_name": "Sloan",
+    "last_name": "Brickstock",
+    "gender": "Male"
+  },
+  {
+    "id": 4,
+    "first_name": "Trevar",
+    "last_name": "Mantha",
+    "gender": "Male"
+  },
+  {
+    "id": 5,
+    "first_name": "Bonni",
+    "last_name": "Borwick",
+    "gender": "Female"
+  },
+  {
+    "id": 6,
+    "first_name": "Lara",
+    "last_name": "Stollsteimer",
+    "gender": "Female"
+  },
+  {
+    "id": 7,
+    "first_name": "Eldredge",
+    "last_name": "Olesen",
+    "gender": "Male"
+  },
+  {
+    "id": 8,
+    "first_name": "Dennison",
+    "last_name": "Eastabrook",
+    "gender": "Male"
+  },
+  {
+    "id": 9,
+    "first_name": "Justis",
+    "last_name": "Mylechreest",
+    "gender": "Male"
+  },
+  {
+    "id": 10,
+    "first_name": "Neron",
+    "last_name": "Izakovitz",
+    "gender": "Male"
+  },
+  {
+    "id": 11,
+    "first_name": "Ram",
+    "last_name": "Tuttiett",
+    "gender": "Male"
+  },
+  {
+    "id": 12,
+    "first_name": "Chester",
+    "last_name": "McFee",
+    "gender": "Male"
+  },
+  {
+    "id": 13,
+    "first_name": "Janean",
+    "last_name": "Izkovitz",
+    "gender": "Female"
+  },
+  {
+    "id": 14,
+    "first_name": "Felicia",
+    "last_name": "Jacquemy",
+    "gender": "Female"
+  },
+  {
+    "id": 15,
+    "first_name": "Netta",
+    "last_name": "Sperling",
+    "gender": "Female"
+  }
+]
