@@ -1,7 +1,8 @@
 const express = require('express');
 
 const app = express();
-const { getUsers } = require('./utils/handleFs');
+const { getUsers, addUser } = require('./utils/handleFs');
+const { userIsValid } = require('./utils/handleReqFormat');
 
 app.use(express.json());
 
@@ -14,8 +15,12 @@ app.get('/users/:id', async (req, res) => {
   res.status(200).send(requestedUser);
 });
 
-app.post('/users', (req, res) => {
-  res.status(201).send('Data will be here soon...');
+app.post('/users', async (req, res) => {
+  if (userIsValid(req.body)) {
+    res.status(201).send(await addUser(req.body));
+  } else {
+    res.status(400).send('Invalid format');
+  }
 });
 
 module.exports = app;

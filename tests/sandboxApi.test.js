@@ -1,3 +1,4 @@
+/* eslint-disable mocha/no-hooks-for-single-case */
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const sinon = require('sinon');
@@ -30,7 +31,6 @@ const users = JSON.stringify([
 ]);
 
 const newUser = {
-  id: 4,
   firstName: 'Trevar',
   lastName: 'Mantha',
   gender: 'Male',
@@ -68,10 +68,19 @@ describe('Testing if the API works properly', function () {
   });
   describe('POST method', function () {
     it('Using POST method to add a new user', async function () {
-      // Mock fsWriteFile
-      // Create new user
-      // Post new user
-      // Assert database's length and the last item's id
+      beforeEach(function () {
+        sinon.stub(fs, 'readFile').resolves(users);
+      });
+    
+      afterEach(function () {
+        sinon.restore();
+      });
+      
+      const writeStub = sinon.stub(fs, 'writeFile').resolves();
+
+      const response = await chai.request(app).post('/users').send(newUser);
+      expect(response.status).to.be.equal(201);
+      expect(writeStub.called).to.equal(true);
     });
   });
 });
